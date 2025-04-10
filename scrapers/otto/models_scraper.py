@@ -13,5 +13,5 @@ class ModelsScraper(BaseScraper):
         self.logger.info("Scraping models data...")
         # Placeholder for actual scraping logic
         data = {"data": "models data"}
-        self.save_data(data, "models_data.txt")
+        self.save_data(data, "models_data.json")
         return data

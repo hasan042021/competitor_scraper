@@ -13,5 +13,5 @@ class ProductsScraper(BaseScraper):
         self.logger.info("Scraping products data...")
         # Placeholder for actual scraping logic
         data = {"data": "products data"}
-        self.save_data(data, "products_data.txt")
+        self.save_data(data, "products_data.json")
         return data

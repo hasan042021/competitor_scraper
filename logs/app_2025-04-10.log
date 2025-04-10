@@ -38,3 +38,23 @@
 [19:07:28] [INFO] - WebDriver closed.
 [19:07:30] [INFO] - WebDriver closed.
 [19:07:30] [INFO] - Application finished.
+[19:16:35] [INFO] - Application started.
+[19:16:40] [INFO] - WebDriver initialized.
+[19:16:44] [INFO] - WebDriver initialized.
+[19:16:47] [INFO] - WebDriver initialized.
+[19:16:47] [INFO] - Starting manufacturer scraping...
+[19:16:47] [INFO] - Scraping manufacturer data...
+[19:16:47] [INFO] - Data saved to manufacturer_data.json
+[19:16:47] [INFO] - Manufacturer scraping completed.
+[19:16:47] [INFO] - Starting models scraping...
+[19:16:47] [INFO] - Scraping models data...
+[19:16:47] [INFO] - Data saved to models_data.json
+[19:16:47] [INFO] - Models scraping completed.
+[19:16:47] [INFO] - Starting products scraping...
+[19:16:47] [INFO] - Scraping products data...
+[19:16:47] [INFO] - Data saved to products_data.json
+[19:16:47] [INFO] - Products scraping completed.
+[19:16:50] [INFO] - WebDriver closed.
+[19:16:52] [INFO] - WebDriver closed.
+[19:16:55] [INFO] - WebDriver closed.
+[19:16:55] [INFO] - Application finished.
