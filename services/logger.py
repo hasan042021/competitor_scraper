@@ -1,7 +1,8 @@
-# utils/logger.py
 import logging
 from config.settings import LOG_DIR
 from datetime import datetime
+import sys
+import io
 
 
 def setup_logger(name: str) -> logging.Logger:
@@ -12,7 +13,7 @@ def setup_logger(name: str) -> logging.Logger:
     logger.setLevel(logging.DEBUG)
 
     # File Handler
-    file_handler = logging.FileHandler(log_file)
+    file_handler = logging.FileHandler(log_file, encoding="utf-8")
     file_handler.setLevel(logging.DEBUG)
 
     # Console Handler
@@ -30,5 +31,9 @@ def setup_logger(name: str) -> logging.Logger:
     if not logger.handlers:
         logger.addHandler(file_handler)
         logger.addHandler(console_handler)
+
+    # Ensure console output is UTF-8 encoded
+    if sys.stdout.encoding.lower() != "utf-8":
+        sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
     return logger

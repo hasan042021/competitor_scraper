@@ -1,8 +1,8 @@
 # scrapers/otto/base.py
 
-from otto.manufacturer_scraper import ManufacturerScraper
-from otto.models_scraper import ModelsScraper
-from otto.products_scraper import ProductsScraper
+from scrapers.otto.manufacturer_scraper import ManufacturerScraper
+from scrapers.otto.models_scraper import ModelsScraper
+from scrapers.otto.products_scraper import ProductsScraper
 
 
 class OttoScraper:
